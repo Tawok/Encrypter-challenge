@@ -1,0 +1,291 @@
+/* "1440 x 1024" */
+body{
+    width: 1440px;
+    background-color: #000;
+    font-family: 'Inter', sans-serif;
+    margin: 0 auto;
+}
+
+.encrypt-section{
+    position: relative;
+    display: inline-block;
+    width: 960px;
+    height: 1024px;
+}
+
+.logo{
+    position: absolute;
+    top: 40px;
+    left: 40px;
+}
+
+.encrypt-textarea{
+    position: absolute;
+    top: 168px;
+    left: 240px;
+    background-color: #0a0a11;
+    color:#25f30f;
+    font-family: 'Inter', sans-serif;
+    font-size: 32px;
+    font-weight: 400;
+    outline: none;
+    resize: none;
+    border-style: none;
+    border-radius: 10px;
+    border: 2px solid rgb(109, 14, 14);
+}
+
+.encrypt-textarea::placeholder{
+    color:#25f30f;
+    font-family: 'Inter', sans-serif;
+    font-size: 32px;
+    font-weight: 400;
+}
+
+.encrypt-warning{
+    position: absolute;
+    top: 851px;
+    left: 240px;
+    color: red;    
+}
+
+.encrypt-button{
+    position: absolute;
+    top: 885px;
+    left: 240px;
+    width: 328px;
+    height: 67px;
+    border-radius: 24px;
+    background-color: #25f30f;
+    font-weight: bold;
+    color: #494949;
+}
+
+.encrypt-button:hover{
+    scale: 1.05;
+    border: 2px solid rgb(109, 14, 14);
+}
+
+.decrypt-button{
+    top: 885px;
+    left: 592px;
+    position: absolute;
+    width: 328px;
+    height: 67px;
+    border-radius: 24px;
+    background-color: #25f30f;
+    font-weight: bold;
+    color:#494949;
+}
+
+.decrypt-button:hover{
+    scale: 1.05;
+    border: 2px solid rgb(109, 14, 14);
+}
+
+.decrypt-section{
+    position: relative;
+    text-align: center;
+    display:inline-block;
+    width: 400px;
+    height: 944px;   
+    border-radius: 32px;
+    background-color: #0a0a11;
+    border: 2px solid rgb(109, 14, 14);
+}
+
+.muñeco{
+    position: absolute;
+    top: 243.17px;
+    left: 25px;
+}
+
+.decrypt-text{
+    position: absolute;
+    top: 579px;
+    left: 32px;
+    right:32px;
+}
+
+.items:first-of-type{
+    font-size: 24px;
+    font-weight: bold;
+    color: #25f30f;
+    margin-bottom: 16px;
+    line-height: 28.8px;
+}
+
+.items:last-of-type{
+    font-size: 16px;
+    color: #25f30f;
+    line-height: 24px;
+}
+
+.decrypt-textarea{
+    display: none;
+    position: absolute;
+    top: 32px;
+    left: 32px;
+    background-color: #0a0a11;
+    color:#25f30f;
+    font-family: 'Inter', sans-serif;
+    font-size: 32px;
+    font-weight: 400;
+    outline: none;
+    resize: none;
+    border-style: none;
+    border-radius: 10px;
+}
+
+.copy-button{
+    display: none;
+    position: absolute;
+    top: 845px;
+    left: 32px;
+    border: 0px;
+    border-radius: 24px;
+    width: 336px;
+    height: 67px;
+    background-color: #25f30f;
+    font-weight: bold;
+    color: #494949;
+}
+
+.copy-button:hover{
+    scale: 1.05;
+    border: 2px solid rgb(109, 14, 14);
+}
+
+/* screen < "1440 x 1024" */
+@media screen and (max-width:1439px){
+    body{
+        width: 769px;
+        text-align: center; 
+    }
+
+    .encrypt-section{
+        position:relative;
+        width: 688px;
+        height: 820px;
+    }
+
+    .logo{
+        top: 50px;
+        left: 0px
+    }
+
+    .encrypt-textarea{
+        position: static;
+        margin-top: 150px;
+    }
+
+    .encrypt-warning{
+        position: absolute;
+        top: 680px;
+        left: 40px; 
+        color: red;    
+    }
+
+    .encrypt-button{
+        top: 705px;
+        left: 20px;
+        width: 320px;
+    }
+    
+    .decrypt-button{
+        top: 705px;
+        left: 350px;
+        width: 320px;
+    }
+
+    .decrypt-section{
+        display:grid;
+        margin: 0px auto;
+        width: 680px;
+        height: auto;
+        align-items: center;
+    }
+
+    .muñeco{
+        display: none;
+    }
+
+   .decrypt-text{
+        position: static;
+        margin: 32px 0;
+    }
+
+    .decrypt-textarea{
+        position: static;
+        margin: 5px auto;
+        width: 624px;
+        height: 250px;
+    }
+
+    .copy-button{
+        position: static;
+        margin: 5px auto;
+        border-radius: 24px;
+        width: 336px;
+        height: 67px;
+        background-color: #25f30f;
+        color: #494949;
+    }
+}
+
+/* screen < "375 x 1024" */
+@media screen and (max-width: 800px){
+    body{
+        width: 668px;
+        margin: 0 auto;
+    }
+
+    .encrypt-section{
+        position:relative;
+        display: block;
+        text-align: center;
+    }
+
+    .logo{
+        top: 24px;
+        left: 0px
+    }
+    
+    .encrypt-textarea{
+        position: static;
+        width: 640px;
+        margin-top: 100px;
+    }
+
+    .encrypt-warning{
+        position: static;
+        text-align: start;
+        margin-top: 10px;
+        padding-left: 18px;
+        font-size: 32px;
+        color: red;    
+    }
+
+    .exclamation-warning{
+        width: 24px;    
+    }
+
+    .encrypt-buttons{
+        display: grid;
+        margin: 10px;
+        justify-content: center;
+    }
+
+    .encrypt-button{
+        position: static;
+        font-size: 32px;
+        width: 640px;
+    }
+    
+    .decrypt-button{
+        position: static;
+        font-size: 32px;
+        width: 640px;    
+        margin: 5px 0;   
+    }
+}

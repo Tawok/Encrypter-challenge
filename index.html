@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles/reset.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css"/>
+    <title>encrypter</title>
+</head>
+<body>
+    <main>
+        <section class="encrypt-section">        
+            <img src="images/Logo.png" class="logo" alt="logo-alura"/>
+            <textarea class="encrypt-textarea" id="encrypt-text" rows="12" cols="35" placeholder="Ingrese el texto aquí"></textarea>
+            <div class="encrypt-warning">
+                <p class="text-warning"><img src="images/exlamation.png" class="exclamation-warning" alt="exlamation-warning"/> Solo letras minúsculas sin acentos</p>
+            </div>
+            <div class="encrypt-buttons">
+                <button id="encrypt-button" class="encrypt-button" type="button">Encriptar</button>
+                <button id="decrypt-button" class="decrypt-button">Desencriptar</button>
+            </div>
+        </section>        
+        <section class="decrypt-section">
+            <div id="decrypt-box" class="decrypt-box">
+                <img src="images/muñeco.png" class="muñeco" alt="muñeco-lupa"/>
+                <ul class="decrypt-text">
+                <li class="items">Ningún mensaje fue encontrado</li>
+                <li class="items">Ingresa el texto que desees encriptar o desencriptar.</li>
+                </ul>
+            </div>
+            <textarea id="decrypt-textarea" class="decrypt-textarea" rows="20" cols="18"></textarea>
+            <button id="copy-button" class="copy-button" type="button">Copiar</button>
+        </section>
+    </main>
+    <script src="scripts.js"></script>
+</body>
+</html>
